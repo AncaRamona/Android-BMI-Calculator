@@ -27,20 +27,23 @@ public class BMI {
     }
 
     private double calc(Double height, Double weight) {
-        // 体重(kg) ÷ 身長(m) × 身長(m)
-        Double bmi = weight / (height * 0.01 * height * 0.01);
+        // BMI = ?
+        Double bmi = ?;
         BigDecimal bi = new BigDecimal(String.valueOf(bmi));
 
         // 小数点2桁で切り捨て
         return bi.setScale(2, BigDecimal.ROUND_DOWN).doubleValue();
     }
 
-    private void setDiagnosis(Double v) {
-        if (v >= 25) {
+    private void setDiagnosis(Double bmi) {
+        // bmiが25以上は太り気味
+        // bmiが25未満〜18.5は普通
+        // bmiが18.5未満は痩せ気味
+        if (        ) {
             this.diagnosisResult = "太りぎみ";
             this.diagnosisColor = Color.parseColor("#ff0000");
 
-        } else if(v < 25 && v >= 18.5) {
+        } else if(        ) {
             this.diagnosisResult = "普通";
             this.diagnosisColor = Color.parseColor("#00ff00");
 
