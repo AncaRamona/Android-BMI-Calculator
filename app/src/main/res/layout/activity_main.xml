@@ -14,7 +14,7 @@
         android:ems="10"
         android:inputType="numberDecimal"
         android:padding="50px"
-        android:hint="身長" />
+        android:hint="身長(cm)" />
 
     <EditText
         android:id="@+id/editWeight"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editHeight"
         android:ems="10"
-        android:hint="体重"
+        android:hint="体重(kg)"
         android:inputType="numberDecimal"
         android:padding="50px" />
 
